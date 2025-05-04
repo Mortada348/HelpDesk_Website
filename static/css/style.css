@@ -1,0 +1,1428 @@
+body {
+  background: #fff;
+  color: #100e0e;
+  font-family: "Open Sans", sans-serif;
+}
+
+a {
+  color: #6571c2;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+#navbar {
+  background-color: rgba(46, 161, 232, 0.777);
+}
+
+#navbar a {
+  color: #fff;
+}
+
+#navbar > div > a:first-child {
+  font-size: 40px;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+#navbar > div > a:first-child span {
+  color: rgb(4, 32, 88);
+  text-decoration: underline;
+}
+
+#navbar li ul li a {
+  color: #110527;
+}
+
+#navbar .dropdown ul a:hover,
+#navbar .dropdown ul .active:hover,
+#navbar .dropdown ul li:hover a {
+  color: #2ea1e8;
+}
+
+@media (max-width: 1366px) {
+  .navbar .dropdown .dropdown ul {
+    left: -90%;
+  }
+
+  .navbar .dropdown .dropdown:hover > ul {
+    left: -100%;
+  }
+}
+
+#hero {
+  width: 100%;
+  height: 100vh;
+  background: url(../img/bg-contact-1.jpg) top center;
+  background-size: cover;
+  position: relative;
+}
+
+#hero:before {
+  content: "";
+  background: rgba(0, 0, 0, 0.6);
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+#hero .hero-container {
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+#hero h1 {
+  margin: 30px 0 10px 0;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 56px;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+@media (max-width: 768px) {
+  #hero h1 {
+    font-size: 28px;
+    line-height: 36px;
+  }
+}
+
+#hero h2 {
+  color: #eee;
+  margin-bottom: 50px;
+  font-size: 24px;
+}
+
+@media (max-width: 768px) {
+  #hero h2 {
+    font-size: 18px;
+    line-height: 24px;
+    margin-bottom: 30px;
+  }
+}
+
+#hero .btn-get-started {
+  font-family: "Poppins", sans-serif;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 8px 28px;
+  border-radius: 50px;
+  transition: 0.5s;
+  margin: 10px;
+  border: 2px solid #fff;
+  color: #fff;
+  cursor: pointer;
+}
+
+#hero .btn-get-started:hover {
+  background: #2ea1e8;
+  border: 2px solid #5bbaed;
+}
+
+section {
+  overflow: hidden;
+}
+
+.section-header .section-title {
+  font-size: 32px;
+  color: #111;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+
+.section-header .section-description {
+  text-align: center;
+  padding-bottom: 40px;
+  color: #999;
+}
+
+@media (max-width: 992px) {
+  .breadcrumbs h2 {
+    margin: 0 0 10px 0;
+  }
+}
+
+#about {
+  background: #fff;
+  padding: 80px 0;
+}
+
+#about .about-container .title {
+  color: #333;
+  font-weight: 700;
+  font-size: 32px;
+}
+
+@media (max-width: 768px) {
+  #about .about-container .title {
+    padding-top: 15px;
+  }
+}
+
+#about .about-container p {
+  line-height: 26px;
+}
+
+#about .about-container p:last-child {
+  margin-bottom: 0;
+}
+
+#about .about-container .icon-box {
+  background: #fff;
+  background-size: cover;
+  padding: 0 0 30px 0;
+}
+
+#about .about-container .icon-box .icon {
+  float: left;
+  background: #fff;
+  width: 64px;
+  height: 64px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  border-radius: 50%;
+  border: 2px solid #2ea1e8;
+}
+
+#about .about-container .icon-box .icon i {
+  color: #2ea1e8;
+  font-size: 24px;
+  line-height: 0;
+}
+
+#about .about-container .icon-box .title {
+  margin-left: 80px;
+  font-weight: 500;
+  margin-bottom: 5px;
+  font-size: 18px;
+  text-transform: uppercase;
+}
+
+#about .about-container .icon-box .title a {
+  color: #111;
+}
+
+#about .about-container .icon-box .description {
+  margin-left: 80px;
+  line-height: 24px;
+  font-size: 14px;
+}
+
+#facts {
+  background: #f7f7f7;
+  padding: 80px 0 60px 0;
+}
+
+#facts .counters span {
+  font-size: 48px;
+  display: block;
+  color: #2ea1e8;
+}
+
+#facts .counters p {
+  padding: 10px;
+  margin: 0 0 20px 0;
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+}
+
+#services {
+  background: #fff;
+  background-size: cover;
+  padding: 80px 0 60px 0;
+}
+
+#services .box {
+  padding: 50px 20px;
+  margin-bottom: 50px;
+  text-align: center;
+  border: 1px solid #e6e6e6;
+  height: 200px;
+  position: relative;
+  background: #fafafa;
+}
+
+#services .icon {
+  position: absolute;
+  top: -36px;
+  left: calc(50% - 36px);
+  transition: 0.2s;
+  border-radius: 50%;
+  border: 6px solid #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  width: 72px;
+  height: 72px;
+  background: #2ea1e8;
+}
+
+#services .icon a {
+  display: inline-block;
+}
+
+#services .icon i {
+  color: #fff;
+  font-size: 24px;
+  line-height: 0;
+}
+
+#services .box:hover .icon {
+  background: #fff;
+  border: 2px solid #72a9cc;
+}
+
+#services .box:hover .icon i {
+  color: #72a9cc;
+}
+
+#services .box:hover .icon a {
+  color: #72a9cc;
+}
+
+#services .title {
+  font-weight: 700;
+  font-size: 18px;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+}
+
+#services .title a {
+  color: #111;
+}
+
+#services .description {
+  font-size: 14px;
+  line-height: 24px;
+}
+
+#footer {
+  background: linear-gradient(
+      216deg,
+      rgba(77, 77, 77, 0.05) 0%,
+      rgba(77, 77, 77, 0.05) 25%,
+      rgba(42, 42, 42, 0.05) 25%,
+      rgba(42, 42, 42, 0.05) 38%,
+      rgba(223, 223, 223, 0.05) 38%,
+      rgba(223, 223, 223, 0.05) 75%,
+      rgba(36, 36, 36, 0.05) 75%,
+      rgba(36, 36, 36, 0.05) 100%
+    ),
+    linear-gradient(
+      44deg,
+      rgba(128, 128, 128, 0.05) 0%,
+      rgba(128, 128, 128, 0.05) 34%,
+      rgba(212, 212, 212, 0.05) 34%,
+      rgba(212, 212, 212, 0.05) 57%,
+      rgba(25, 25, 25, 0.05) 57%,
+      rgba(25, 25, 25, 0.05) 89%,
+      rgba(135, 135, 135, 0.05) 89%,
+      rgba(135, 135, 135, 0.05) 100%
+    ),
+    linear-gradient(
+      241deg,
+      rgba(55, 55, 55, 0.05) 0%,
+      rgba(55, 55, 55, 0.05) 14%,
+      rgba(209, 209, 209, 0.05) 14%,
+      rgba(209, 209, 209, 0.05) 60%,
+      rgba(245, 245, 245, 0.05) 60%,
+      rgba(245, 245, 245, 0.05) 69%,
+      rgba(164, 164, 164, 0.05) 69%,
+      rgba(164, 164, 164, 0.05) 100%
+    ),
+    linear-gradient(
+      249deg,
+      rgba(248, 248, 248, 0.05) 0%,
+      rgba(248, 248, 248, 0.05) 32%,
+      rgba(148, 148, 148, 0.05) 32%,
+      rgba(148, 148, 148, 0.05) 35%,
+      rgba(202, 202, 202, 0.05) 35%,
+      rgba(202, 202, 202, 0.05) 51%,
+      rgba(181, 181, 181, 0.05) 51%,
+      rgba(181, 181, 181, 0.05) 100%
+    ),
+    linear-gradient(92deg, hsl(214, 0%, 11%), hsl(214, 0%, 11%));
+  padding: 30px;
+  color: #fff;
+  font-size: 14px;
+}
+
+#footer .copyright {
+  text-align: center;
+}
+
+#footer .credits {
+  padding-top: 10px;
+  text-align: center;
+  font-size: 13px;
+  color: #ccc;
+}
+
+/*Log in page */
+
+#login {
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  background: url(../img/bg-contact-1.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding: 130px;
+}
+
+#login form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 30%;
+  height: auto;
+  border-radius: 8px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  margin-top: 30px;
+  background-color: transparent;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 0 10px rgba(21, 88, 147, 0.667);
+  padding: 10px;
+}
+
+#login form div {
+  margin-left: 30px;
+  margin-top: 20px;
+}
+
+#login form input {
+  width: 80%;
+  border-top: 0;
+  border-right: 0;
+  border-left: 0;
+  margin-bottom: 10px;
+  padding: 10px;
+  font-size: 11px;
+  background: transparent;
+}
+
+#login form button {
+  width: 70%;
+  border-radius: 15px;
+  padding: 10px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 40px;
+  color: #fff;
+  background-color: #2ea1e8;
+  border: none;
+  text-align: center;
+}
+
+#login form h1 {
+  text-align: center;
+}
+
+#login form p {
+  margin-top: 70px;
+  color: grey;
+}
+
+#login a {
+  margin-bottom: 20px;
+}
+@media screen and (max-width: 1250px) {
+  #login form {
+    width: 50%;
+  }
+}
+@media screen and (max-width: 950px) {
+  #login form {
+    width: 60%;
+  }
+}
+@media screen and (max-width: 650px) {
+  #login form {
+    width: 70%;
+  }
+}
+@media screen and (max-width: 500px) {
+  #login {
+    display: flex;
+    justify-content: start;
+  }
+
+  #login form {
+    width: 1000px;
+  }
+}
+
+/*sign up page*/
+
+#signup {
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  background: url(../img/bg-contact-1.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding: 5px;
+}
+
+#signup form {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  width: 30%;
+  height: auto;
+  border-radius: 8px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  margin-top: 30px;
+  background-color: transparent;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 0 10px rgba(21, 88, 147, 0.667);
+}
+
+#signup form input {
+  width: 70%;
+  margin-bottom: 20px;
+  margin-left: 50px;
+  border-top: 0;
+  border-right: 0;
+  border-left: 0;
+  padding: 10px;
+  font-size: 11px;
+  margin-top: 10px;
+  background-color: transparent;
+}
+
+#signup form button {
+  width: 70%;
+  margin-left: 65px;
+  margin-bottom: 30px;
+  margin-top: 20px;
+  padding: 10px;
+  border-radius: 15px;
+  cursor: pointer;
+  color: #fff;
+  background-color: #2ea1e8;
+  border: none;
+  font-weight: bold;
+}
+
+#signup form h1 {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+#signup form label {
+  margin-left: 50px;
+  font-size: small;
+}
+
+#signup form a {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+#signup form button {
+  display: flex;
+  justify-content: center;
+}
+
+@media screen and (max-width: 1250px) {
+  #signup form {
+    width: 40%;
+  }
+}
+@media screen and (max-width: 950px) {
+  #signup form {
+    width: 50%;
+  }
+}
+@media screen and (max-width: 650px) {
+  #signup form {
+    width: 60%;
+  }
+}
+@media screen and (max-width: 500px) {
+  #signup form {
+    width: 70%;
+  }
+}
+@media screen and (max-width: 430px) {
+  #signup form {
+    width: 80%;
+  }
+}
+@media screen and (max-width: 350px) {
+  #signup form {
+    width: 100%;
+  }
+}
+/*ticket form page*/
+#ticketForm {
+  background: #fff;
+  color: #000000;
+  font-family: "Open Sans", sans-serif;
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  grid-template-rows: auto;
+  margin: 0;
+  padding: 0;
+  grid-template-areas:
+    "header header header header header header header header header header"
+    "main main main main main main main main main main"
+    "footer footer footer footer footer footer footer footer footer footer";
+}
+
+#navbar {
+  background-color: rgba(46, 161, 232, 0.777);
+}
+
+#ticketForm header {
+  grid-area: header;
+}
+
+#ticketForm main {
+  grid-area: main;
+  background: url(../img/bg-contact-1.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  font-family: "Open Sans", sans-serif;
+}
+#ticketForm main h1 {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-size: 35px;
+}
+#ticketForm footer {
+  grid-area: footer;
+}
+
+#ticketForm main form {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  width: 50%;
+  background-color: transparent;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 0 10px rgba(21, 88, 147, 0.667);
+  width: auto;
+  padding: 20px;
+  border-radius: 10px;
+  height: auto;
+}
+
+#ticketForm main section {
+  background-color: #2ea1e843;
+  backdrop-filter: blur(30px);
+  box-shadow: 0 0 10px rgba(21, 88, 147, 0.667);
+  height: auto;
+  border-radius: 8px;
+  width: 70%;
+  margin-bottom: 10px;
+  padding: 15px;
+  color: #110527;
+  font-size: 18px;
+}
+
+#ticketForm main form label {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+#ticketForm main form input {
+  border-radius: 8px;
+  border: none;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+#ticketForm main form textarea {
+  border-radius: 8px;
+  border: none;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+#ticketForm main form select {
+  padding: 5px;
+  border: none;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+#ticketForm main form button {
+  margin-top: 20px;
+  border-radius: 8px;
+  background-color: #2ea1e8;
+  color: #fff;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+#ticketForm aside h3 {
+  padding-left: 20px;
+}
+
+/*user tickets page*/
+#usertickets {
+  background: #fff;
+  color: #666666;
+  font-family: "Open Sans", sans-serif;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  grid-template-rows: auto;
+  grid-template-areas:
+    "header header header header header header header header header header"
+    "main main main main main main main main main main"
+    "footer footer footer footer footer footer footer footer footer footer";
+  height: auto;
+}
+
+#navbar {
+  background-color: rgba(46, 161, 232, 0.777);
+}
+#navbar .dropdown ul a:hover,
+#navbar .dropdown ul .active:hover,
+#navbar .dropdown ul li:hover > a {
+  color: #2ea1e8;
+}
+#usertickets header {
+  grid-area: header;
+}
+#usertickets section {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  height: auto;
+  border-left: 3px solid #4b2b85;
+  margin: 10px;
+}
+
+#usertickets section > div {
+  width: 90%;
+  border: 2px solid #343b40;
+  border-radius: 8px;
+  padding: 5px;
+  margin: 20px;
+  background-color: rgba(255, 255, 255, 0.81);
+  box-shadow: 0 0 10px rgba(21, 88, 147, 0.667);
+  display: flex;
+  flex-direction: column;
+}
+#usertickets main #before-footer {
+  border: 2px solid #110527;
+  width: 95%;
+  margin-left: 30px;
+  height: auto;
+  background-color: rgba(255, 255, 255, 0.564);
+  padding: 15px;
+  border-radius: 8px;
+  color: #270b5b;
+  font-size: 25px;
+  display: flex;
+  margin-bottom: 10px;
+}
+#usertickets main #before-footer img {
+  border-radius: 8px;
+  margin-left: 5px;
+}
+#usertickets section div h3,
+span {
+  color: #270b5b;
+  font-weight: bold;
+}
+#usertickets footer {
+  grid-area: footer;
+}
+
+#usertickets main {
+  font-family: "Times New Roman", Times, serif;
+  background: url(../img/bg-contact-1.jpg);
+  background-size: cover;
+  background-position: center;
+  grid-area: main;
+  height: auto;
+}
+#usertickets main h1 {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-size: 35px;
+  color: #110527;
+}
+#usertickets main h3 {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-size: 20px;
+  color: #110527;
+}
+
+#usertickets section div > button {
+  margin-left: 10px;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  width: 30%;
+}
+
+#usertickets #paragraph {
+  font-size: 20px;
+}
+
+#employee {
+  background: #fff;
+  color: #666666;
+  font-family: "Open Sans", sans-serif;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  grid-template-rows: auto;
+  grid-template-areas:
+    "header header header header header header header header header header"
+    "main main main main main main main main main main"
+    "footer footer footer footer footer footer footer footer footer footer";
+  height: auto;
+}
+
+#employee header {
+  grid-area: header;
+}
+#employee section {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  height: auto;
+  border-left: 3px solid black;
+  margin: 10px;
+}
+
+#employee section > div {
+  width: 90%;
+  border: 2px solid #343b40;
+  border-radius: 8px;
+  padding: 5px;
+  margin: 20px;
+  background-color: rgba(255, 255, 255, 0.81);
+  box-shadow: 0 0 10px rgba(21, 88, 147, 0.667);
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  height: auto;
+}
+
+#employee section > div #title {
+  display: flex;
+}
+
+#employee section > div h3 {
+  margin-top: 15px;
+}
+
+#employee section div h3,
+span {
+  color: black;
+  font-weight: bold;
+}
+#employee footer {
+  grid-area: footer;
+}
+#employee #myForm {
+  width: 150%;
+}
+
+#employee main {
+  font-family: "Times New Roman", Times, serif;
+  background: url(../img/bg-contact-1.jpg);
+  background-size: cover;
+  background-position: center;
+  grid-area: main;
+  height: auto;
+}
+#employee main h1 {
+  color: black;
+}
+
+#employee section div > button {
+  margin-left: 10px;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  width: 30%;
+}
+#employee .form-popup {
+  border: 3px solid #f1f1f1;
+  z-index: 9;
+}
+
+#employee .form-container {
+  max-width: 300px;
+  padding: 10px;
+  background-color: white;
+}
+
+/* Full-width input fields */
+#employee .form-container input[type="text"],
+.form-container input[type="password"] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+}
+
+/* When the inputs get focus, do something */
+
+/* Set a style for the submit/login button */
+#employee .form-container .btn {
+  background-color: #2ea1e8;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom: 10px;
+  opacity: 0.8;
+}
+
+/* Add a red background color to the cancel button */
+#employee .form-container .cancel {
+  background-color: #343b40;
+}
+
+/* Add some hover effects to buttons */
+#employee .form-container .btn:hover,
+.open-button:hover {
+  opacity: 1;
+}
+#employee main > h1 {
+  text-align: center;
+}
+@media screen and (max-width: 850px) {
+  #employee form textarea {
+    width: 150%;
+  }
+}
+@media screen and (max-width: 540px) {
+  #employee form textarea {
+    width: 100%;
+  }
+}
+
+footer {
+  position: relative;
+  width: 100%;
+  text-decoration: none;
+  min-height: 100px;
+  padding: 20px 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: sticky;
+}
+
+footer .social-icon,
+.menu {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px 0;
+  flex-wrap: wrap;
+  text-decoration: none;
+}
+
+footer .social-icon__item,
+.menu__item {
+  list-style: none;
+}
+
+footer .social-icon__link {
+  font-size: 1rem;
+  color: #fff;
+  margin: 0 10px;
+  display: inline-block;
+  transition: 0.5s;
+  text-decoration: none;
+  position: sticky;
+}
+footer .social-icon__link:hover {
+  transform: translateY(-10px);
+}
+
+#employee .menu__link {
+  font-size: 1.2rem;
+  color: #fff;
+  margin: 0 10px;
+  display: inline-block;
+  transition: 0.5s;
+  text-decoration: none;
+  opacity: 0.75;
+  font-weight: 300;
+}
+
+#employee main section div .small_card {
+  display: flex;
+  margin: 10px 0;
+  transform: translateX(-20px);
+  transition: 0.3s;
+  opacity: 0;
+}
+
+#employee main section div:hover .small_card {
+  transform: translateX(2px);
+  cursor: pointer;
+  opacity: 1;
+}
+
+#employee main section div .small_card > i {
+  width: 45px;
+  height: 45px;
+  border-radius: 5px;
+  font-size: 18px;
+  margin: 2px 0;
+  line-height: 40px;
+  border: 2px solid #000000;
+  transition: 0.2s;
+  margin-right: 15px;
+  padding-left: 15px;
+}
+
+#employee main section #close {
+  width: 45px;
+  height: 45px;
+  border-radius: 5px;
+  font-size: 20px;
+  margin: 2px 0;
+  line-height: 40px;
+  border: 2px solid #000000;
+  transition: 0.2s;
+  margin-right: 15px;
+  padding-left: 15px;
+  cursor: pointer;
+}
+#employee main section i:hover {
+  color: #fff;
+  background-color: #616e78;
+}
+@keyframes animateWaves {
+  0% {
+    background-position-x: 1000px;
+  }
+  100% {
+    background-positon-x: 0px;
+  }
+}
+
+@keyframes animate {
+  0% {
+    background-position-x: -1000px;
+  }
+  100% {
+    background-positon-x: 0px;
+  }
+}
+
+#adminpage1 {
+  background: url(../img/bg-contact-1.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: auto;
+}
+
+#adminpage1 main {
+  font-family: "Times New Roman", Times, serif;
+  margin-top: 50px;
+  grid-area: main;
+  padding: 20px;
+}
+#adminpage1 main h1 {
+  color: black;
+}
+#adminpage1 main > h1 {
+  text-align: center;
+}
+#adminpage1 section > div {
+  width: 90%;
+  border: 2px solid #343b40;
+  border-radius: 8px;
+  padding: 5px;
+  margin: 20px;
+  background-color: rgba(255, 255, 255, 0.81);
+  box-shadow: 0 0 10px rgba(21, 88, 147, 0.667);
+  display: flex;
+  flex-direction: column;
+}
+
+#adminpage1 section div > button {
+  margin-left: 10px;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  width: 30%;
+}
+#adminpage1 section > div:hover {
+  border: 1px solid #2ea1e8;
+}
+
+#adminpage1 section div h3,
+span {
+  color: black;
+  font-weight: bold;
+}
+#adminpage1 main h1 {
+  color: black;
+}
+#adminpage1 section div > button {
+  border-radius: 8px;
+  margin-bottom: 10px;
+  width: 5%;
+  margin-top: 10px;
+}
+
+#adminpage1 section div input {
+  width: 10%;
+}
+
+#adminpage1 section div button:hover {
+  background-color: #343b40;
+  color: #fff;
+}
+
+#addemployee form button {
+  height: 1 rem;
+  width: 5.5rem;
+  font-family: Arial;
+  background-color: #2ea1e8;
+  border-radius: 25px;
+  margin: auto;
+  color: #ffffff;
+  font-size: 15px;
+  padding: 10px 20px 10px 20px;
+}
+#addemployee form {
+  padding: 10px;
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  gap: 20px;
+}
+
+/* The popup form - hidden by default */
+
+/* Add styles to the form container */
+#addemployee html,
+body {
+  min-height: 100%;
+}
+#addemployee body,
+div,
+form,
+input,
+select,
+textarea,
+label,
+p {
+  padding: 0;
+  margin: 0;
+  outline: none;
+  font-family: Roboto, Arial, sans-serif;
+  font-size: 14px;
+  color: #666;
+  line-height: 22px;
+}
+#addemployeetextarea {
+  width: calc(100% - 12px);
+  padding: 5px;
+}
+#addemployee .testbox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: inherit;
+  padding: 20px;
+}
+#addemployee #hero {
+  width: 100%;
+  height: 80vh;
+  background: url(../img/bg-contact-1.jpg) top center;
+  background-size: cover;
+  position: relative;
+}
+
+#addemployee #hero:before {
+  content: "";
+  background: rgba(0, 0, 0, 0.6);
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+#addemployee #hero .hero-container {
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+#addemployee #hero h1 {
+  margin: 30px 0 10px 0;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 56px;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+@media (max-width: 768px) {
+  #hero h1 {
+    font-size: 28px;
+    line-height: 36px;
+  }
+}
+
+#hero h2 {
+  color: #eee;
+  margin-bottom: 50px;
+  font-size: 24px;
+}
+
+@media (max-width: 768px) {
+  #hero h2 {
+    font-size: 18px;
+    line-height: 24px;
+    margin-bottom: 30px;
+  }
+}
+
+#addemployee form {
+  width: 100%;
+  padding: 20px;
+  border-radius: 6px;
+  background: #fff;
+}
+
+#addemployee input,
+select,
+textarea {
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+#addemployee input {
+  width: calc(100% - 10px);
+  padding: 5px;
+}
+#addemployee input[type="date"] {
+  padding: 4px 5px;
+}
+#addemployee textarea {
+  width: calc(100% - 12px);
+  padding: 5px;
+}
+#addemployee .item:hover p,
+.item:hover i,
+.question:hover p,
+.question label:hover,
+input:hover::placeholder {
+  color: #669999;
+}
+#addemployee .item input:hover,
+.item select:hover,
+.item textarea:hover {
+  border: 1px solid transparent;
+  box-shadow: 0 0 3px 0 #669999;
+  color: #669999;
+}
+#addemployee .item {
+  position: relative;
+  margin: 10px 0;
+}
+#addemployee .item span {
+  color: red;
+}
+#addemployee .week {
+  display: flex;
+  justfiy-content: space-between;
+}
+#addemployee .colums {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+#addemployee .colums div {
+  width: 48%;
+}
+
+#addemployee .item i,
+input[type="date"]::-webkit-calendar-picker-indicator {
+  position: absolute;
+  font-size: 20px;
+  color: #a3c2c2;
+}
+#addemployee .item i {
+  right: 1%;
+  top: 30px;
+  z-index: 1;
+}
+#addemployee input[type="radio"],
+input[type="checkbox"] {
+  display: none;
+}
+#addemployee label.radio {
+  position: relative;
+  display: inline-block;
+  margin: 5px 20px 15px 0;
+  cursor: pointer;
+}
+#addemployee .question span {
+  margin-left: 30px;
+}
+#addemployee .question-answer label {
+  display: block;
+}
+#addemployee label.radio:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 17px;
+  height: 17px;
+  border-radius: 50%;
+  border: 2px solid #ccc;
+}
+#addemployee input[type="radio"]:checked + label:before,
+label.radio:hover:before {
+  border: 2px solid #669999;
+}
+#addemployee label.radio:after {
+  content: "";
+  position: absolute;
+  top: 6px;
+  left: 5px;
+  width: 8px;
+  height: 4px;
+  border: 3px solid #669999;
+  border-top: none;
+  border-right: none;
+  transform: rotate(-45deg);
+  opacity: 0;
+}
+#addemployee input[type="radio"]:checked + label:after {
+  opacity: 1;
+}
+
+#addemployee button {
+  width: 150px;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background: #669999;
+  font-size: 16px;
+  color: #fff;
+  cursor: pointer;
+}
+#addemployee button:hover {
+  background: #a3c2c2;
+}
+@media (min-width: 568px) {
+  .name-item,
+  .city-item {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}
+.name-item input,
+.name-item div {
+  width: calc(50% - 20px);
+}
+.name-item div input {
+  width: 97%;
+}
+.name-item div label {
+  display: block;
+  padding-bottom: 5px;
+}
+
+#table h1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  font-size: 3rem;
+  margin-top: 10px;
+}
+
+#table table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+  margin-bottom: 2%;
+}
+
+#table td,
+th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+#table tr:nth-child(even) {
+  background-color: #dddddd;
+}
+
+#table {
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  grid-template-areas:
+    " nav nav nav nav nav nav nav nav nav nav"
+    "main main main main main main main main main main"
+    "footer footer footer footer footer footer footer footer footer footer";
+  height: 130vh;
+  background: url(../img/bg-contact-1.jpg);
+  background-size: cover;
+  background-position: center;
+}
+#table nav {
+  grid-area: nav;
+}
+#table main {
+  font-family: "Times New Roman", Times, serif;
+
+  grid-area: main;
+  margin-top: 30px;
+}
+#table footer {
+  grid-area: footer;
+}
